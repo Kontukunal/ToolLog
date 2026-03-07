@@ -16,7 +16,7 @@ export const getEquipment = async () => {
   return handleResponse(response);
 };
 
-export const createEquipment = async (equipmentData) => {
+export const createEquipment = async (equipmentData) => { 
   const response = await fetch(`${API_BASE_URL}/equipment`, {
     method: "POST",
     headers: {

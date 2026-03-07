@@ -6,6 +6,7 @@ const connectDB = async () => {
       process.env.MONGODB_URI ||
         "mongodb://localhost:27017/equipment-management",
     );
+    console.log(`Mongo : ${process.env.MONGODB_URI}`);
     console.log(`MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
     console.error("Database connection error:", error);
